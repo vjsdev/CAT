@@ -1,0 +1,14 @@
+.mat-header-cell {
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-top-width: 0;
+  border-bottom-width: 1px;
+  color: blue;
+}
+th.mat-sort-header-sorted {
+  color: black;
+}
+.mat-column- {
+  display: flex;
+  justify-content: flex-end;
+}
