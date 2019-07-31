@@ -1,0 +1,78 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <h4>Audits</h4>
+    <div class="row card-deck">
+      <div class="col-md-4 card customcard" *ngFor="let audit of audits; let i-index;">
+        <div class="card-header catcardheader">
+          <div class="c100 small cardrating"
+            [ngClass]="{'green': audit.percentage>=50, 'orange': (audit.percentage<50 && audit.percentage>20), 'red': audit.percentage<=20 || audit.locked}"
+            class="{{'p' + audit.percentage}}">
+            <span *ngIf="!audit.locked">{{audit.percentage}}</span>
+            <span *ngIf="audit.locked"><i class="fas fa-lock"></i></span>
+            <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <hr class="customcarddivider" /> -->
+        <div class="card-body">
+          <h5 class="card-title">{{audit.date}}</h5>
+          <div *ngFor="let p of progress">
+            <div class="round"
+              [ngClass]="{'gray': p.id>audit.step, 'green':p.id<audit.step, 'activeprogress':audit.step===p.id}"
+              data-toggle="tooltip" title='{{p.title}}'></div>
+          </div>
+          <br />
+          <div *ngFor="let text of audit.text">
+            <p class="catcardbody">{{text}}</p>
+          </div>
+          <a *ngIf="audit.action" href="#" class="btn btn-outline-dark btn-sm btn-block"
+            (click)="doAction($event)">{{audit.action}}</a>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="material-icons">access_time</i> Last updated{{audit.lastUpdated}} ago
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4" >
+          <a href="#" class="btn btn-outline-dark btn-sm btn-block" data-toggle="modal" data-target=".bd-example-modal-xl">Create Audit</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>HRB Online</h5>&nbsp;/&nbsp;<h5>Audit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <mat-tab-group animationDuration="2000ms">
+              <mat-tab label="Ratings">
+                  <cat-ratings></cat-ratings>
+              </mat-tab>
+              <mat-tab label="Observations">
+                <cat-observations></cat-observations>
+              </mat-tab>
+              <mat-tab label="Comments">
+                <cat-comments></cat-comments>
+              </mat-tab>
+            </mat-tab-group>
+
+      </div>
+      </div>
+      </div>
+      </div>

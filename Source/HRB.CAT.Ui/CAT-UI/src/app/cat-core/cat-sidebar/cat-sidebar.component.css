@@ -1,0 +1,15 @@
+li.active > a {
+  background-color: rgba(84, 84, 84, 0.91) !important;
+  box-shadow: none;
+}
+.nav li.active > a, .nav li.active > a i {
+  color: #7cc242 !important;
+}
+.logo-img img {
+  width: 35px !important;
+  top: 16px;
+  position: absolute;
+}
+.catlogotext {
+  margin: 0 !important;
+}
