@@ -162,3 +162,17 @@ body {
   font-size: 5rem !important;
   margin: 22px auto 0 auto;
 }
+
+.bold{
+  font-weight: bold;
+}
+
+.amber-text {
+    color: #ffc107!important;
+}
+
+.auditActionHead{
+    margin: 10px;
+    border-bottom: 1px dashed #dddddd;
+    padding-bottom: 9px;
+}

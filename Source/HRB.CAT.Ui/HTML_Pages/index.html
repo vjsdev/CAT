@@ -256,6 +256,7 @@
               <p class="card-text">Waiting for auditor to access the audit request.</p>
               <p>Vishnu Potti made the request on 11 March 2019. </p>
               <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+              <a href="#" class="btn btn-outline-dark btn-sm btn-block" data-toggle="modal" data-target=".bd-example-modal-xl">Audit</a>
             </div>
           </div>
 
@@ -351,7 +352,7 @@
               </div>
               <hr class="customcarddivider" />
               <div class="card-body">
-                <h5 class="card-title">March 2019</h5>
+                <h5 class="card-title">November 2018</h5>
                 <div>
                     <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
                     <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
@@ -378,7 +379,7 @@
               </div>
               <hr class="customcarddivider" />
               <div class="card-body">
-                <h5 class="card-title">February 2019</h5>
+                <h5 class="card-title">October 2018</h5>
                 <div>
                     <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
                     <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
@@ -394,24 +395,250 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
         </div>
       </main>
     </div>
   </div>
+
+
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h5>HRB Online</h5>&nbsp;/&nbsp;<h5>Audit</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+
+<div class="auditActionHead">
+  <button type="button" class="btn btn-outline-primary"><i class="fas fa-cloud-upload-alt"></i> Submit</button>    &nbsp;     
+  <button type="button" class="btn btn-outline-secondary"><i class="far fa-save"></i> Save</button>    &nbsp;     
+  <button type="button" class="btn btn-outline-secondary"><i class="fas fa-ban"></i> Cancel</button>
+</div> 
+
+      <div class="modal-body">
+        
+
+
+
+
+
+
+<div class="accordion" id="ratingAccordian">
+
+  <a class="btn collapsed bold"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    General
+  </a>
+  <a class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+    Observations
+  </a>
+  <a class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      Comments
+  </a>
+
+
+  
+  <div class="card">
+    <div class="" id="headingOne">
+
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#ratingAccordian">
+      <div class="card-body">
+
+        <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" width="10%">#</th>
+            <th scope="col" width="30%"></th>
+            <th scope="col" width="20%">Rating</th>
+            <th scope="col" width="40%">Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Documentation</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Performance</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+<tr>
+            <th scope="row">3</th>
+            <td>Security</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+<tr>
+            <th scope="row">4</th>
+            <td>Static code analysis metrics</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+
+          <tr>
+            <th scope="row">5</th>
+            <td>Follows the defined architecture</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+
+          <tr>
+            <th scope="row">6</th>
+            <td>Object-Oriented Analysis and Design (OOAD) Principles [SOLID]</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+
+
+          <tr>
+            <th scope="row">7</th>
+            <td>Reliability [Exception handling and cleanup (dispose) resources]</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+
+          <tr>
+            <th scope="row">8</th>
+            <td>Reusability [DRY (Do not Repeat Yourself) principle]</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+
+          <tr>
+            <th scope="row">9</th>
+            <td>Scalability/Extensibility</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+
+
+          <tr>
+            <th scope="row">10</th>
+            <td>Overall</td>
+            <td>
+              <span class="rating"></span>
+            </td>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="" id="headingTwo">
+      
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#ratingAccordian">
+       <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" width="10%">#</th>
+            <th scope="col" width="70%">Comments</th>
+            <th scope="col" width="20%">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><input class="form-control" type="text" placeholder=""></td>
+            <td>
+              <span class="rating"></span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><input class="form-control" type="text" placeholder=""></td>
+            <td>
+              <span class="rating"></span>
+            </td>
+          </tr>
+ <tr>
+            <th scope="row">3</th>
+            <td><input class="form-control" type="text" placeholder=""></td>
+            <td>
+              <span class="rating"></span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+            <td>
+              <span class="rating"></span>
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div>
+    <div id="headingThree">
+        
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#ratingAccordian">
+      <br/>
+      <textarea class="form-control" id="message-text" placeholder="How did it go?"></textarea>
+      <br/>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -424,11 +651,24 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+
+
+
+  <!-- rating.js file -->
+  <script src="js/rating.js"></script>
+
   <script type="text/javascript">
     $(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
+
+    $(document).ready(function() {
+      $('.rating').mdbRate();
+    });
   </script>
+
+
 
 
   <!-- Font Awesome -->
@@ -437,6 +677,8 @@
       Font Awesome https://mdbootstrap.com/docs/jquery/content/icons-list/ 
       http://circle.firchow.net/
     -->
+
+
 
 
 </body>
