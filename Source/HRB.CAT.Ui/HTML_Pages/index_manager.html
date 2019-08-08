@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/circle.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><i class="far fa-compass"></i> C.A.T</a>
+    <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Commands" aria-label="Commands"> -->
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Help</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <span class="nav-link">PROJECTS</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-connectdevelop"></i>
+                GUA
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-connectdevelop"></i>
+                Connect
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-connectdevelop"></i>
+                HRBO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-connectdevelop"></i>
+                Financial Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-connectdevelop"></i>
+                Salesforce
+              </a>
+            </li>
+          </ul>
+          <hr />
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <span class="nav-link">MANAGE</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-pushed"></i>
+                My Activities
+              </a>
+            </li>
+            <li class="nav-item">
+
+              <a class="nav-link" href="#">
+                <i class="fab fa-pushed"></i>
+                Account Settings
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-pushed"></i>
+                Contact C.A.T Admin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+        <div
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+          <select id="monthlyReport" class="form-control-sm">
+              <option>April 2019</option>
+              <option>March 2019</option>
+              <option>February 2019</option>
+              <option>January 2019</option>
+              <option>December 2018</option>
+            </select>
+        </div>
+
+        <div class="row">
+          <div class="col col-lg-12">
+           
+                <div class="content">
+                  <div class="row">
+                    <div class="col col-lg-2">
+                        <div class="card">
+                            <div class="card-body">
+                        <h6 class="card-title">Top Charts</h6>
+                        <p class="card-text">
+                          <ul class="toprating">
+                            <li><i class="fas fa-medal"></i> GUA</li>
+                            <li><i class="fas fa-medal"></i> My Block</li>
+                            <li><i class="fas fa-medal"></i> Connect</li>
+                            <li><i class="fas fa-medal"></i> Salesforce</li>
+                            <li><i class="fas fa-medal"></i> HRBO</li>
+                            <li><i class="fas fa-medal"></i> Salesforce</li>
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="card">
+                            <div class="card-body">
+                              <h6 class="card-title">Bottom 7</h6>
+                              <p class="card-text">
+                                <ul class="bottomrating">
+                                  <li><i class="fas fa-heart-broken"></i> GUA</li>
+                                  <li><i class="fas fa-heart-broken"></i> My Block</li>
+                                  <li><i class="fas fa-heart-broken"></i> Connect</li>
+                                  <li><i class="fas fa-heart-broken"></i> HRBO</li>
+                                  <li><i class="fas fa-heart-broken"></i> Architect</li>
+                                  <li><i class="fas fa-heart-broken"></i> HRBO</li>
+                                </ul>
+                              </p>
+                            </div>
+                          </div>
+            
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
+                              <div class="row">
+                                  <div class="col col-lg-6 col-md-6">
+                                      <canvas id="statusDistributionChart"></canvas>
+                                  </div>
+                                  <div class="col col-lg-6 col-md-6">
+                                      <canvas id="ratingDistributionChart"></canvas>
+                                      
+                                  </div>
+                              </div>
+                              
+                            </p>
+                          </div>
+                        </div>
+
+                    </div>
+                  
+                
+              </div>
+            </div>
+            
+               
+
+
+          </div> 
+        </div>
+
+    <div class="row">
+      <div class="col">&nbsp;</div>
+    </div>
+
+    <div class="">
+      <div class="row">
+        <div class="col col-lg-6 col-md-12">
+          <div class="tableCover">
+            <h6>
+              <label for="monthlyReport">Report for </label>
+              <a href="#" class="btn btn-sm btn-outline-primary float-right">Export Report</a>
+            </h6>
+            <table class="table table-sm">
+              <tbody>
+                <tr>
+                  <th scope="col" width="40%">Project</th>
+                  <th scope="col" width="50%">Status</th>
+                  <th scope="col" width="10%">Rating</th>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1"><a href="#">GUA</a></label>
+                    </div>
+                  </td>
+                  <td>Waiting for auditor approval</td>
+                  <td>
+                    <div class="managerrating amber">37</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                      <label class="custom-control-label" for="customCheck2"><a href="#">Connect</a></label>
+                    </div>
+                  </td>
+                  <td>Waiting for auditor approval</td>
+                  <td>
+                    <div class="managerrating">67</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck3">
+                      <label class="custom-control-label" for="customCheck3"><a href="#">HRBO</a></label>
+                    </div>
+                  </td>
+                  <td>Audit preparation in progress</td>
+                  <td>
+                    <div class="managerrating green">88</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck4">
+                      <label class="custom-control-label" for="customCheck4"><a href="#">Financial Services</a></label>
+                    </div>
+                  </td>
+                  <td>Locked out</td>
+                  <td>
+                    <div class="managerrating red">11</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col col-lg-6 col-md-12">
+          <div class="tableCover">
+            <h6>
+              Approve/Reject
+            </h6>
+            <table class="table table-sm">
+              <tbody>
+                <tr>
+                  <th scope="col" width="30%">Project</th>
+                  <th scope="col" width="50%">Request</th>
+                  <th scope="col" width="20%"></th>
+                </tr>
+                <tr>
+                  <td>
+                    GUA
+                  </td>
+                  <td>
+                    Requesting auditor access
+                    <br />
+                    <small>
+                      <i class="fas fa-user"></i> Vishnu Potti&nbsp;
+                      <i class="far fa-clock"></i> 18 June 2019 02:00 PM
+                    </small>
+
+                  </td>
+                  <td>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                      <button type="button" class="btn btn-success">Accept</button>
+                      <button type="button" class="btn btn-danger">Reject</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Connect
+
+                  </td>
+                  <td>
+                    Requesting project access
+                    <br />
+                    <small>
+                      <i class="fas fa-user"></i> Vishnu Potti&nbsp;
+                      <i class="far fa-clock"></i> 18 June 2019 02:00 PM
+                    </small>
+                  </td>
+                  <td>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                      <button type="button" class="btn btn-success">Accept</button>
+                      <button type="button" class="btn btn-danger">Reject</button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    HRBO
+                  </td>
+                  <td>
+                    Unlock request
+                    <br />
+                    <small>
+                      <i class="fas fa-user"></i> Vishnu Potti&nbsp;
+                      <i class="far fa-clock"></i> 18 June 2019 02:00 PM
+                    </small>
+
+                  </td>
+                  <td>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                      <button type="button" class="btn btn-success">Accept</button>
+                      <button type="button" class="btn btn-danger">Reject</button>
+                    </div>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td>
+                    Financial Services
+                  </td>
+                  <td>
+                    Unlock request
+                    <br />
+                    <small>
+                      <i class="fas fa-user"></i> Vishnu Potti&nbsp;
+                      <i class="far fa-clock"></i> 18 June 2019 02:00 PM
+                    </small>
+                  </td>
+                  <td>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                      <button type="button" class="btn btn-success">Accept</button>
+                      <button type="button" class="btn btn-danger">Reject</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+  </div>
+  </div>
+
+  <div class="modal fade audit-history-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5>Audit History - HRB Online / January 2019</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <th scope="col" width="20%">Time</th>
+              <th scope="col" width="80%">Details</th>
+            </tr>
+            <tr>
+              <td>01 April 2019 03:00 AM </td>
+              <td>
+                Created audit request by Gayathri.
+              </td>
+            </tr>
+            <tr>
+              <td>02 April 2019 03:00 AM </td>
+              <td>
+                Audit request by accepted by Vipin John.
+              </td>
+            </tr>
+            <tr>
+              <td>04 April 2019 11:00 AM </td>
+              <td>
+                Audit completed by Vipin John.
+              </td>
+            </tr>
+            <tr>
+              <td>07 April 2019 11:25 AM </td>
+              <td>
+                Audit accepted by Gayathri.
+              </td>
+            </tr>
+            <tr>
+              <td>21 April 2019 11:00 AM </td>
+              <td>
+                Audit finalized.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade audit-request-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5>Create Audit Request - HRB Online / April 2019</h5>
+        </div>
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Upload the code</td>
+              <td>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                  <label class="custom-file-label" for="validatedCustomFile">Choose the zip file containing the
+                    codebase...</label>
+                  <div class="invalid-feedback">Example invalid custom file feedback</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Comments</td>
+              <td>
+                <textarea class="form-control"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button type="button" class="btn btn-outline-primary"><i class="fas fa-cloud-upload-alt"></i>
+                  Submit</button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" aria-label="Close"><i
+                    class="fas fa-ban"></i> Close without creating the audit request</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade audit-report-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5>Audit Report - HRB Online / March 2019</h5>
+        </div>
+
+        <div class="auditActionHead">
+          <button type="button" class="btn btn-outline-secondary"><i class="far fa-save"></i> Download</button> &nbsp;
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" aria-label="Close"><i
+              class="fas fa-ban"></i> Close</button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="tabGeneral">
+            <h5>General</h5>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" width="10%">#</th>
+                  <th scope="col" width="30%"></th>
+                  <th scope="col" width="20%">Rating</th>
+                  <th scope="col" width="40%">Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Documentation</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Performance</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Security</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Static code analysis metrics</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Follows the defined architecture</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Object-Oriented Analysis and Design (OOAD) Principles [SOLID]</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Reliability [Exception handling and cleanup (dispose) resources]</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Reusability [DRY (Do not Repeat Yourself) principle]</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Scalability/Extensibility</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Overall</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="tabObservations">
+            <p>
+              <h5>Observations</h5>
+            </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" width="10%">#</th>
+                  <th scope="col" width="70%">Comments</th>
+                  <th scope="col" width="20%">Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">6</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">7</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">8</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabComments">
+            <h5>
+              Comments
+            </h5>
+            <textarea readonly=true class="form-control"
+              id="message-text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</textarea>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade audit-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5>Audit - HRB Online / March 2019</h5>
+        </div>
+
+        <div class="auditActionHead">
+          <button type="button" class="btn btn-outline-primary"><i class="fas fa-cloud-upload-alt"></i> Submit</button>
+          &nbsp;
+          <button type="button" class="btn btn-outline-secondary"><i class="far fa-save"></i> Save</button> &nbsp;
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" aria-label="Close"><i
+              class="fas fa-ban"></i> Close without saving data</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="auditPages">
+            <a href="#" class="btn bold"
+              onclick="return Tabify(this, '.tabGeneral', ['.tabObservations', '.tabComments']);">
+              General
+            </a>
+            <a href="#" class="btn" onclick="return Tabify(this, '.tabObservations', ['.tabGeneral', '.tabComments']);">
+              Observations
+            </a>
+            <a href="#" class="btn" onclick="return Tabify(this, '.tabComments', ['.tabObservations', '.tabGeneral']);">
+              Comments
+            </a>
+          </div>
+
+          <div class="tabGeneral">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" width="10%">#</th>
+                  <th scope="col" width="30%"></th>
+                  <th scope="col" width="20%">Rating</th>
+                  <th scope="col" width="40%">Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Documentation</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Performance</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Security</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Static code analysis metrics</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Follows the defined architecture</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Object-Oriented Analysis and Design (OOAD) Principles [SOLID]</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Reliability [Exception handling and cleanup (dispose) resources]</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Reusability [DRY (Do not Repeat Yourself) principle]</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Scalability/Extensibility</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Overall</td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+          <div class="tabObservations hide">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" width="10%">#</th>
+                  <th scope="col" width="70%">Comments</th>
+                  <th scope="col" width="20%">Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><input class="form-control" type="text" placeholder=""></td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td><input class="form-control" type="text" placeholder=""></td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td><input class="form-control" type="text" placeholder=""></td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">6</th>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">7</th>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">8</th>
+                  <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  <td>
+                    <div class="rating"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tabComments hide">
+            <textarea class="form-control" id="message-text" placeholder="How did it go?"></textarea>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+
+    
+
+  <!-- rating.js file -->
+  <!-- <script src="js/rating.js"></script> -->
+  <script src="js/fxss-rate/rate.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      DrawChart();
+    });
+
+    // $(document).ready(function() {
+    //   $('.rating').mdbRate();
+    // });
+
+    $(".rating").rate({
+      // 0：svg  1：Font class  2：Unicode
+      type: 0,
+      // the number of stars
+      length: 5,
+      // initial value
+      value: 0,
+      // allows half star
+      half: true,
+      // supports decimal?
+      decimal: true,
+      // is readonly?
+      readonly: false,
+      // shows the current rating value on hover
+      hover: false,
+      // shows rating text
+      text: true,
+      // an array of rating text
+      textList: ['Bad', 'Poor', 'Medium', 'Good', 'Perfect'],
+      // color
+      theme: '#000', //#FFB800
+      // text/star size
+      size: '16px',
+      // space between stars
+      gutter: '3px',
+      // default CSS classes
+      selectClass: 'fxss_rate_select',
+      incompleteClass: '',
+      customClass: ''
+    });
+
+    $(".ratingreadonly").each((index) => {
+      $($(".ratingreadonly")[index]).rate({
+        // 0：svg  1：Font class  2：Unicode
+        type: 0,
+        // the number of stars
+        length: 5,
+        // initial value
+        value: getRandomInt(4),
+        // allows half star
+        half: true,
+        // supports decimal?
+        decimal: true,
+        // is readonly?
+        readonly: true,
+        // shows the current rating value on hover
+        hover: false,
+        // shows rating text
+        text: true,
+        // an array of rating text
+        textList: ['Bad', 'Poor', 'Medium', 'Good', 'Perfect'],
+        // color
+        theme: '#000', //#FFB800
+        // text/star size
+        size: '14px',
+        // space between stars
+        gutter: '3px',
+        // default CSS classes
+        selectClass: 'fxss_rate_select',
+        incompleteClass: '',
+        customClass: ''
+      });
+    });
+
+
+    function Tabify(btn, activeTab, inactiveTabs) {
+      $(".auditPages a").removeClass("bold");
+      $(btn).addClass("bold");
+      $(activeTab).show();
+      inactiveTabs.forEach((tab) => { $(tab).hide(); });
+    }
+
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    function DrawChart(){
+      var ctx = document.getElementById('ratingDistributionChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+              labels: ['90-100', '80-90', '70-80', '60-70', '50-60', 'Under 50'],
+              datasets: [{
+                  label: 'Rating distribution',
+                  data: [2, 3, 2, 6, 3, 3],
+                  backgroundColor: [
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(153, 102, 255, 0.2)',
+                      'rgba(255, 206, 86, 0.2)',
+                      'rgba(255, 159, 64, 0.2)',
+                      'rgba(255, 99, 132, 0.2)'
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: true
+                      }
+                  }]
+              }
+          }
+      });
+
+
+      data1 = {
+          datasets: [{
+              data: [5, 4, 8],
+              backgroundColor: ["rgb(255, 99, 132)","rgb(54, 162, 235)","rgb(54, 205, 86)"]
+          }],
+          labels: [
+              'Audit not requested',
+              'Audit in progress',
+              'Audit completed'
+          ]
+          
+      };
+      var ctx = document.getElementById('statusDistributionChart').getContext('2d');
+      var myDoughnutChart = new Chart(ctx, {
+          type: 'doughnut',
+          data: data1,
+          options: {
+            legend:{
+              position: 'right'
+            }
+          }
+      });
+    }
+
+
+
+      </script>
+
+
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!--
+      Font Awesome https://mdbootstrap.com/docs/jquery/content/icons-list/ 
+      http://circle.firchow.net/
+    -->
+
+
+
+
+</body>
+
+</html>

@@ -141,7 +141,7 @@ body {
   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
   animation-name: activeProgress;
   animation-duration: 2s;
-  animation-iteration-count: 40;
+  animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -175,4 +175,57 @@ body {
     margin: 10px;
     border-bottom: 1px dashed #dddddd;
     padding-bottom: 9px;
+}
+
+.rate_text{
+  font-size: 14px;
+}
+
+.tableCover
+{
+  background: linear-gradient(180deg, #f1f1f1, transparent);
+  padding: 7px 5px;
+  border: 1px dashed #eaeaea;
+}
+
+.managerrating{
+  height: 20px;
+  width: 32px;
+  color: white;
+  text-align: center;
+  border-radius: 23px 23px 0 0;
+  font-size: 11px;
+  font-weight: bold;
+  padding-top: 2px;
+  text-shadow: 1px 1px 1px #757575;
+  background: #6a6a6a;
+}
+
+.managerrating.amber{ background: orange;}
+.managerrating.red{ background: red;}
+.managerrating.green{background: #12ba18;}
+
+.toprating, .bottomrating{
+  list-style: none;
+  line-height: 35px;
+  color: #666;
+  margin: 0;
+  padding: 0 0 0 22px;
+}
+
+.toprating i, .bottomrating i{
+  color: #FFB800;
+  font-size: 18px;
+  margin-right: 7px; 
+}
+
+.toprating i
+{
+  list-style: none;
+  line-height: 25px;
+}
+
+.bottomrating i
+{
+  color: orangered;
 }

@@ -20,7 +20,7 @@
 <body>
   <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><i class="far fa-compass"></i> C.A.T</a>
-    <input class="form-control form-control-dark w-100" type="text" placeholder="Commands" aria-label="Commands">
+    <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Commands" aria-label="Commands"> -->
     <ul class="navbar-nav px-3">
       <li class="nav-item text-nowrap">
         <a class="nav-link" href="#">Help</a>
@@ -34,7 +34,7 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
-                <span class="nav-link">PROJECTS</span>
+              <span class="nav-link">PROJECTS</span>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -67,27 +67,27 @@
               </a>
             </li>
           </ul>
-          <hr/>
+          <hr />
           <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                  <span class="nav-link">MANAGE</span>
-              </li>
+            <li class="nav-item">
+              <span class="nav-link">MANAGE</span>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                  <i class="fab fa-pushed"></i>
+                <i class="fab fa-pushed"></i>
                 My Activities
               </a>
             </li>
             <li class="nav-item">
 
               <a class="nav-link" href="#">
-                  <i class="fab fa-pushed"></i>
+                <i class="fab fa-pushed"></i>
                 Account Settings
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                  <i class="fab fa-pushed"></i>
+                <i class="fab fa-pushed"></i>
                 Contact C.A.T Admin
               </a>
             </li>
@@ -95,7 +95,7 @@
         </div>
       </nav>
 
-      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">HRB Online</h1>
@@ -228,7 +228,7 @@
               <br />
               <p class="card-text">You haven't requested for an audit yet. You can click on below button to start with.
               </p>
-              <a href="#" class="btn btn-outline-dark btn-sm btn-block">Request for an Audit</a>
+              <a href="#" class="btn btn-outline-dark btn-sm btn-block" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target=".audit-request-modal">Request for an Audit</a>
             </div>
           </div>
 
@@ -244,19 +244,20 @@
             <div class="card-body">
               <h5 class="card-title">March 2019</h5>
               <div>
-                  <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
-                  <div class="round activeprogress" data-toggle="tooltip" title="Waiting for auditors response"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Waiting for audit report"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Review audit report"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Finalize audit report"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Completed"></div>
-                </div>
+                <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
+                <div class="round activeprogress" data-toggle="tooltip" title="Waiting for auditors response"></div>
+                <div class="round gray" data-toggle="tooltip" title="Waiting for audit report"></div>
+                <div class="round gray" data-toggle="tooltip" title="Review audit report"></div>
+                <div class="round gray" data-toggle="tooltip" title="Finalize audit report"></div>
+                <div class="round gray" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
+                <div class="round gray" data-toggle="tooltip" title="Completed"></div>
+              </div>
               <br />
               <p class="card-text">Waiting for auditor to access the audit request.</p>
               <p>Vishnu Potti made the request on 11 March 2019. </p>
               <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
-              <a href="#" class="btn btn-outline-dark btn-sm btn-block" data-toggle="modal" data-target=".bd-example-modal-xl">Audit</a>
+              <a href="#" class="btn btn-outline-dark btn-sm btn-block" data-toggle="modal" data-backdrop="static" data-keyboard="false"
+                data-target=".audit-modal">Audit</a>
             </div>
           </div>
 
@@ -272,18 +273,20 @@
             <div class="card-body">
               <h5 class="card-title">February 2019</h5>
               <div>
-                  <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
-                  <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
-                  <div class="round activeprogress" data-toggle="tooltip" title="Waiting for audit report"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Review audit report"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Finalize audit report"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Completed"></div>
-                </div>
+                <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
+                <div class="round activeprogress" data-toggle="tooltip" title="Waiting for audit report"></div>
+                <div class="round gray" data-toggle="tooltip" title="Review audit report"></div>
+                <div class="round gray" data-toggle="tooltip" title="Finalize audit report"></div>
+                <div class="round gray" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
+                <div class="round gray" data-toggle="tooltip" title="Completed"></div>
+              </div>
               <br />
               <p class="card-text">Auditor accepted the audit request.</p>
               <p>Gayathri is about to take a look at your project.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <a href="#" class="btn btn-sm btn-block btn-outline-success">Accept</a>
+              <a href="#" class="btn btn-sm btn-block btn-outline-danger">Reject</a>
             </div>
           </div>
 
@@ -299,345 +302,635 @@
             <div class="card-body">
               <h5 class="card-title">January 2019</h5>
               <div>
-                  <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
-                  <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
-                  <div class="round green" data-toggle="tooltip" title="Waiting for audit report"></div>
-                  <div class="round activeprogress" data-toggle="tooltip" title="Review audit report"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Finalize audit report"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
-                  <div class="round gray" data-toggle="tooltip" title="Completed"></div>
+                <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for audit report"></div>
+                <div class="round activeprogress" data-toggle="tooltip" title="Review audit report"></div>
+                <div class="round gray" data-toggle="tooltip" title="Finalize audit report"></div>
+                <div class="round gray" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
+                <div class="round gray" data-toggle="tooltip" title="Completed"></div>
               </div>
               <br />
               <p class="card-text">Congratulatons! You've completed the audit process for this month.</p>
-              <a href="#">View History</a>
+              <a href="#" class="btn btn-sm btn-block btn-outline-success" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target=".audit-report-modal">View Audit Report</a>
+              <a href="#" class="btn btn-sm btn-block btn-outline-dark" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target=".audit-history-modal">View History</a>
+              
+              
 
             </div>
-          </div> 
+          </div>
 
           <div class="card customcard">
-              <div class="c100 p100 small red cardrating">
-                <span><i class="fas fa-lock"></i></span>
-                <div class="slice">
-                  <div class="bar"></div>
-                  <div class="fill"></div>
-                </div>
-              </div>
-              <hr class="customcarddivider" />
-  
-              <div class="card-body">
-                <h5 class="card-title">December 2018</h5>
-                <div>
-                    <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
-                    <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
-                    <div class="round green" data-toggle="tooltip" title="Waiting for audit report"></div>
-                    <div class="round green" data-toggle="tooltip" title="Review audit report"></div>
-                    <div class="round activeprogress" data-toggle="tooltip" title="Finalize audit report"></div>
-                    <div class="round gray" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
-                    <div class="round gray" data-toggle="tooltip" title="Completed"></div>
-                </div>
-                <br />
-                <p class="card-text">Audit has been locked out due to inactivity.
-                </p>
-                <a href="#" class="btn btn-outline-dark btn-sm btn-block">Message to C.A.T admin</a>
+            <div class="c100 p100 small red cardrating">
+              <span><i class="fas fa-lock"></i></span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
               </div>
             </div>
-  
-            <div class="card customcard">
-              <div class="c100 p83 small green cardrating">
-                <span>83</span>
-                <div class="slice">
-                  <div class="bar"></div>
-                  <div class="fill"></div>
-                </div>
+            <hr class="customcarddivider" />
+
+            <div class="card-body">
+              <h5 class="card-title">December 2018</h5>
+              <div>
+                <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for audit report"></div>
+                <div class="round green" data-toggle="tooltip" title="Review audit report"></div>
+                <div class="round activeprogress" data-toggle="tooltip" title="Finalize audit report"></div>
+                <div class="round gray" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
+                <div class="round gray" data-toggle="tooltip" title="Completed"></div>
               </div>
-              <hr class="customcarddivider" />
-              <div class="card-body">
-                <h5 class="card-title">November 2018</h5>
-                <div>
-                    <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
-                    <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
-                    <div class="round green" data-toggle="tooltip" title="Waiting for audit report"></div>
-                    <div class="round green" data-toggle="tooltip" title="Review audit report"></div>
-                    <div class="round green" data-toggle="tooltip" title="Finalize audit report"></div>
-                    <div class="round activeprogress" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
-                    <div class="round gray" data-toggle="tooltip" title="Completed"></div>
-                </div>
-                <br />
-                <p class="card-text">Waiting for auditor to access the audit request.</p>
-                <p>Vishnu Potti made the request on 11 March 2019. </p>
-                <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+              <br />
+              <p class="card-text">Audit has been locked out due to inactivity.
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-sm btn-block">Message to C.A.T admin</a>
+            </div>
+          </div>
+
+          <div class="card customcard">
+            <div class="c100 p83 small green cardrating">
+              <span>83</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
               </div>
             </div>
-  
-            <div class="card customcard">
-              <div class="c100 p20 small red cardrating">
-                <span>20</span>
-                <div class="slice">
-                  <div class="bar"></div>
-                  <div class="fill"></div>
-                </div>
+            <hr class="customcarddivider" />
+            <div class="card-body">
+              <h5 class="card-title">November 2018</h5>
+              <div>
+                <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for audit report"></div>
+                <div class="round green" data-toggle="tooltip" title="Review audit report"></div>
+                <div class="round green" data-toggle="tooltip" title="Finalize audit report"></div>
+                <div class="round activeprogress" data-toggle="tooltip"
+                  title="Waiting for aditor to accept the changes"></div>
+                <div class="round gray" data-toggle="tooltip" title="Completed"></div>
               </div>
-              <hr class="customcarddivider" />
-              <div class="card-body">
-                <h5 class="card-title">October 2018</h5>
-                <div>
-                    <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
-                    <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
-                    <div class="round green" data-toggle="tooltip" title="Waiting for audit report"></div>
-                    <div class="round green" data-toggle="tooltip" title="Review audit report"></div>
-                    <div class="round green" data-toggle="tooltip" title="Finalize audit report"></div>
-                    <div class="round green" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
-                    <div class="round green" data-toggle="tooltip" title="Completed"></div>
-                </div>
-                <br />
-                <p class="card-text">Auditor accepted the audit request.</p>
-                <p>Gayathri is about to take a look at your project.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <br />
+              <p class="card-text">Waiting for auditor to access the audit request.</p>
+              <p>Vishnu Potti made the request on 11 March 2019. </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+            </div>
+          </div>
+
+          <div class="card customcard">
+            <div class="c100 p20 small red cardrating">
+              <span>20</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
               </div>
             </div>
+            <hr class="customcarddivider" />
+            <div class="card-body">
+              <h5 class="card-title">October 2018</h5>
+              <div>
+                <div class="round green" data-toggle="tooltip" title="Upload code for auditing"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for auditors response"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for audit report"></div>
+                <div class="round green" data-toggle="tooltip" title="Review audit report"></div>
+                <div class="round green" data-toggle="tooltip" title="Finalize audit report"></div>
+                <div class="round green" data-toggle="tooltip" title="Waiting for aditor to accept the changes"></div>
+                <div class="round green" data-toggle="tooltip" title="Completed"></div>
+              </div>
+              <br />
+              <p class="card-text">Auditor accepted the audit request.</p>
+              <p>Gayathri is about to take a look at your project.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
   </div>
 
+  <div class="modal fade audit-history-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
 
-<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-
-      <div class="modal-header">
-
-        <h5>HRB Online</h5>&nbsp;/&nbsp;<h5>Audit</h5>
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-
-<div class="auditActionHead">
-  <button type="button" class="btn btn-outline-primary"><i class="fas fa-cloud-upload-alt"></i> Submit</button>    &nbsp;     
-  <button type="button" class="btn btn-outline-secondary"><i class="far fa-save"></i> Save</button>    &nbsp;     
-  <button type="button" class="btn btn-outline-secondary"><i class="fas fa-ban"></i> Cancel</button>
-</div> 
-
-      <div class="modal-body">
-        
-
-
-
-
-
-
-<div class="accordion" id="ratingAccordian">
-
-  <a class="btn collapsed bold"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-    General
-  </a>
-  <a class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-    Observations
-  </a>
-  <a class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-      Comments
-  </a>
-
-
-  
-  <div class="card">
-    <div class="" id="headingOne">
-
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#ratingAccordian">
-      <div class="card-body">
-
-        <table class="table">
-        <thead>
-          <tr>
-            <th scope="col" width="10%">#</th>
-            <th scope="col" width="30%"></th>
-            <th scope="col" width="20%">Rating</th>
-            <th scope="col" width="40%">Comments</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Documentation</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Performance</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-<tr>
-            <th scope="row">3</th>
-            <td>Security</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-<tr>
-            <th scope="row">4</th>
-            <td>Static code analysis metrics</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-
-          <tr>
-            <th scope="row">5</th>
-            <td>Follows the defined architecture</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-
-          <tr>
-            <th scope="row">6</th>
-            <td>Object-Oriented Analysis and Design (OOAD) Principles [SOLID]</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-
-
-          <tr>
-            <th scope="row">7</th>
-            <td>Reliability [Exception handling and cleanup (dispose) resources]</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-
-          <tr>
-            <th scope="row">8</th>
-            <td>Reusability [DRY (Do not Repeat Yourself) principle]</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-
-          <tr>
-            <th scope="row">9</th>
-            <td>Scalability/Extensibility</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-
-
-          <tr>
-            <th scope="row">10</th>
-            <td>Overall</td>
-            <td>
-              <span class="rating"></span>
-            </td>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-          </tr>
-
-
-
-        </tbody>
-      </table>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="" id="headingTwo">
+            <div class="modal-header">
+                <h5>Audit History - HRB Online / January 2019</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
       
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#ratingAccordian">
-       <table class="table">
-        <thead>
-          <tr>
-            <th scope="col" width="10%">#</th>
-            <th scope="col" width="70%">Comments</th>
-            <th scope="col" width="20%">Rating</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td><input class="form-control" type="text" placeholder=""></td>
-            <td>
-              <span class="rating"></span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td><input class="form-control" type="text" placeholder=""></td>
-            <td>
-              <span class="rating"></span>
-            </td>
-          </tr>
- <tr>
-            <th scope="row">3</th>
-            <td><input class="form-control" type="text" placeholder=""></td>
-            <td>
-              <span class="rating"></span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
-            <td>
-              <span class="rating"></span>
-            </td>
-          </tr>
-
-
-
-        </tbody>
-      </table>
+            <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="col" width="20%">Time</th>
+                    <th scope="col" width="80%">Details</th>
+                  </tr>
+                  <tr>
+                    <td>01 April 2019 03:00 AM </td>
+                    <td>
+                        Created audit request by Gayathri.
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>02 April 2019 03:00 AM </td>
+                      <td>
+                          Audit request by accepted by Vipin John.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>04 April 2019 11:00 AM </td>
+                      <td>
+                          Audit completed by Vipin John.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>07 April 2019 11:25 AM </td>
+                      <td>
+                          Audit accepted by Gayathri.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>21 April 2019 11:00 AM </td>
+                      <td>
+                          Audit finalized.
+                      </td>
+                  </tr>
+                </tbody>
+                </table>
+                  
+        </div>  
     </div>
   </div>
-  <div>
-    <div id="headingThree">
+
+  <div class="modal fade audit-request-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl">
         
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#ratingAccordian">
-      <br/>
-      <textarea class="form-control" id="message-text" placeholder="How did it go?"></textarea>
-      <br/>
+      <div class="modal-content">
+
+          <div class="modal-header">
+              <h5>Create Audit Request - HRB Online / April 2019</h5>
+            </div>
+    
+          <table class="table">
+              <tbody>
+                <tr>
+                  <td>Upload the code</td>
+                  <td>
+                      <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                          <label class="custom-file-label" for="validatedCustomFile">Choose the zip file containing the codebase...</label>
+                          <div class="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Comments</td>
+                  <td>
+                      <textarea class="form-control"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                      <button type="button" class="btn btn-outline-primary"><i class="fas fa-cloud-upload-alt"></i> Submit</button>
+                      &nbsp;
+                      <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" aria-label="Close"><i
+                          class="fas fa-ban"></i> Close without creating the audit request</button>
+                  </td>
+                </tr>
+                
+              </tbody>
+              </table>
+                
+      </div>  
     </div>
   </div>
 
+  <div class="modal fade audit-report-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5>Audit Report - HRB Online / March 2019</h5>
+        </div>
+
+        <div class="auditActionHead">
+          <button type="button" class="btn btn-outline-secondary"><i class="far fa-save"></i> Download</button> &nbsp;
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" aria-label="Close"><i
+              class="fas fa-ban"></i> Close</button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="tabGeneral">
+            <h5>General</h5>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" width="10%">#</th>
+                  <th scope="col" width="30%"></th>
+                  <th scope="col" width="20%">Rating</th>
+                  <th scope="col" width="40%">Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Documentation</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Performance</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Security</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Static code analysis metrics</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Follows the defined architecture</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Object-Oriented Analysis and Design (OOAD) Principles [SOLID]</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
 
 
-</div>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Reliability [Exception handling and cleanup (dispose) resources]</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Reusability [DRY (Do not Repeat Yourself) principle]</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Scalability/Extensibility</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
 
 
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Overall</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                </tr>
 
+              </tbody>
+            </table>
+          </div>
+          <div class="tabObservations">
+            <p>
+              <h5>Observations</h5>
+            </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" width="10%">#</th>
+                  <th scope="col" width="70%">Comments</th>
+                  <th scope="col" width="20%">Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
 
+                <tr>
+                  <th scope="row">6</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
 
+                <tr>
+                  <th scope="row">7</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
 
+                <tr>
+                  <th scope="row">8</th>
+                  <td>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</td>
+                  <td>
+                    <div class="ratingreadonly"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
+          <div class="tabComments">
+            <h5>
+            Comments
+            </h5>
+            <textarea readonly=true class="form-control" id="message-text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</textarea>
+          </div>
 
-
-
-
-
-
-
+        </div>
 
       </div>
     </div>
   </div>
-</div>
+
+
+  <div class="modal fade audit-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+  
+          <div class="modal-header">
+            <h5>Audit - HRB Online / March 2019</h5>
+          </div>
+  
+          <div class="auditActionHead">
+            <button type="button" class="btn btn-outline-primary"><i class="fas fa-cloud-upload-alt"></i> Submit</button>
+            &nbsp;
+            <button type="button" class="btn btn-outline-secondary"><i class="far fa-save"></i> Save</button> &nbsp;
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" aria-label="Close"><i
+                class="fas fa-ban"></i> Close without saving data</button>
+          </div>
+  
+          <div class="modal-body">
+            <div class="auditPages">
+              <a href="#" class="btn bold" onclick="return Tabify(this, '.tabGeneral', ['.tabObservations', '.tabComments']);">
+                General
+              </a>
+              <a href="#" class="btn" onclick="return Tabify(this, '.tabObservations', ['.tabGeneral', '.tabComments']);">
+                Observations
+              </a>
+              <a href="#" class="btn" onclick="return Tabify(this, '.tabComments', ['.tabObservations', '.tabGeneral']);">
+                Comments
+              </a>
+            </div>
+  
+            <div class="tabGeneral">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" width="10%">#</th>
+                    <th scope="col" width="30%"></th>
+                    <th scope="col" width="20%">Rating</th>
+                    <th scope="col" width="40%">Comments</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Documentation</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Performance</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Security</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Static code analysis metrics</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Follows the defined architecture</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Object-Oriented Analysis and Design (OOAD) Principles [SOLID]</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+  
+  
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Reliability [Exception handling and cleanup (dispose) resources]</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Reusability [DRY (Do not Repeat Yourself) principle]</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Scalability/Extensibility</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+  
+  
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Overall</td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                  </tr>
+  
+  
+  
+                </tbody>
+              </table>
+            </div>
+            <div class="tabObservations hide">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" width="10%">#</th>
+                    <th scope="col" width="70%">Comments</th>
+                    <th scope="col" width="20%">Rating</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><input class="form-control" type="text" placeholder=""></td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><input class="form-control" type="text" placeholder=""></td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><input class="form-control" type="text" placeholder=""></td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">6</th>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">7</th>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">8</th>
+                    <td><input class="form-control form-control-sm" type="text" placeholder=""></td>
+                    <td>
+                      <div class="rating"></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+  
+            <div class="tabComments hide">
+              <textarea class="form-control" id="message-text" placeholder="How did it go?"></textarea>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
 
 
   <!-- Optional JavaScript -->
@@ -656,16 +949,95 @@
 
 
   <!-- rating.js file -->
-  <script src="js/rating.js"></script>
+  <!-- <script src="js/rating.js"></script> -->
+  <script src="js/fxss-rate/rate.js"></script>
 
   <script type="text/javascript">
     $(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
 
-    $(document).ready(function() {
-      $('.rating').mdbRate();
+    // $(document).ready(function() {
+    //   $('.rating').mdbRate();
+    // });
+
+    $(".rating").rate({
+      // 0：svg  1：Font class  2：Unicode
+      type: 0,
+      // the number of stars
+      length: 5,
+      // initial value
+      value: 0,
+      // allows half star
+      half: true,
+      // supports decimal?
+      decimal: true,
+      // is readonly?
+      readonly: false,
+      // shows the current rating value on hover
+      hover: false,
+      // shows rating text
+      text: true,
+      // an array of rating text
+      textList: ['Bad', 'Poor', 'Medium', 'Good', 'Perfect'],
+      // color
+      theme: '#000', //#FFB800
+      // text/star size
+      size: '16px',
+      // space between stars
+      gutter: '3px',
+      // default CSS classes
+      selectClass: 'fxss_rate_select',
+      incompleteClass: '',
+      customClass: ''
     });
+
+    $(".ratingreadonly").each((index) => {
+      $($(".ratingreadonly")[index]).rate({
+        // 0：svg  1：Font class  2：Unicode
+        type: 0,
+        // the number of stars
+        length: 5,
+        // initial value
+        value: getRandomInt(4),
+        // allows half star
+        half: true,
+        // supports decimal?
+        decimal: true,
+        // is readonly?
+        readonly: true,
+        // shows the current rating value on hover
+        hover: false,
+        // shows rating text
+        text: true,
+        // an array of rating text
+        textList: ['Bad', 'Poor', 'Medium', 'Good', 'Perfect'],
+        // color
+        theme: '#000', //#FFB800
+        // text/star size
+        size: '14px',
+        // space between stars
+        gutter: '3px',
+        // default CSS classes
+        selectClass: 'fxss_rate_select',
+        incompleteClass: '',
+        customClass: ''
+      });
+    });
+    
+
+    function Tabify(btn, activeTab, inactiveTabs){
+      $(".auditPages a").removeClass("bold");
+      $(btn).addClass("bold");
+      $(activeTab).show();
+      inactiveTabs.forEach((tab) => { $(tab).hide(); });
+    }
+
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+
+
   </script>
 
 
