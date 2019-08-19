@@ -1,0 +1,19 @@
+<div *ngIf="expanded == true" class="wrapper">
+  <div
+    class="sidebar catsidebar"
+    data-color="danger"
+    data-background-color="white"
+    data-image="./assets/img/sidebar-1.jpg"
+  >
+    <cat-sidebar></cat-sidebar>
+    <div
+      class="sidebar-background"
+      style="background-image: url(./assets/img/sidebar-4.jpg)"
+    ></div>
+  </div>
+  <div class="main-panel catpanel">
+    <cat-navbar></cat-navbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<cat-login></cat-login>
