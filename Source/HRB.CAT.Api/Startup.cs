@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -27,6 +28,20 @@ namespace HRB.CAT.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            //https://stackoverflow.com/questions/44379560/how-to-enable-cors-in-asp-net-core-webapi
+            // Add Cors
+            services.AddCors(o => o.AddPolicy("CORS", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }));
+
+            services.Configure<MvcOptions>(options =>
+            {
+                options.Filters.Add(new CorsAuthorizationFilterFactory("CORS"));
+            });
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
@@ -60,13 +75,16 @@ namespace HRB.CAT.Api
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
+            app.UseCors("CORS");
             app.UseMvc();
 
-            app.UseDefaultFiles(new DefaultFilesOptions
-            {
-                DefaultFileNames = new List<string> { "index.html" }
-            });
+            DefaultFilesOptions options = new DefaultFilesOptions();
+            options.DefaultFileNames.Clear();
+            options.DefaultFileNames.Add("index.html");
+            app.UseDefaultFiles(options);
+            app.UseStaticFiles();
         }
     }
 }
