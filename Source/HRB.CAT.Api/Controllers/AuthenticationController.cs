@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HRB.CAT.Common.Utilities;
 using HRB.CAT.Dto.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Web.Http;
 
 namespace HRB.CAT.Api.Controllers
 {
@@ -13,8 +14,8 @@ namespace HRB.CAT.Api.Controllers
     public class AuthenticationController : ControllerBase
     { 
 
-        [HttpPost()]
-        public ActionResult<LoginResponse> Get([FromBody]LoginRequest loginRequest)
+        [HttpGet]
+        public ActionResult<LoginResponse> Get([FromQuery]LoginRequest loginRequest)
         {
             // Validate user
             // Send an email
