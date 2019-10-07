@@ -229,3 +229,15 @@ body {
 {
   color: orangered;
 }
+
+.loginheader{
+  background: #474747;
+  margin: -8px 0 8px 0;
+}
+
+.loginheader span{
+  text-align: center;
+  font-size: 48px;
+  margin: 18px 0;
+  color: #6d6d6d !important;
+}
