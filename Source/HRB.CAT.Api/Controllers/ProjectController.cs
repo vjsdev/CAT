@@ -13,7 +13,7 @@ namespace HRB.CAT.Api.Controllers
     public class ProjectController : ControllerBase
     { 
 
-        [HttpPost()]
+        [HttpGet]
         public ActionResult<ProjectListResponse> Get([FromQuery]ProjectListRequest projectListRequest)
         {
             // Get the data from database and process
