@@ -17,7 +17,6 @@ namespace HRB.CAT.Api.Controllers
         public ActionResult<ProjectListResponse> Get([FromQuery]ProjectListRequest projectListRequest)
         {
             // Get the data from database and process
-            
             // send the response
             return new ProjectListResponse
             {
