@@ -26,7 +26,8 @@ namespace HRB.CAT.Api.Controllers
         {
             // Get the data from database and process
             var projects = _dataStore
-                .Select<ProjectRoleDetails>(CollectionMeta.ProjectCollection)
+                .Select<ProjectResponseDetails>(CollectionMeta.ProjectCollection)
+                .OrderBy(x => x.ProjectName)
                 .ToList();
 
             projects.ForEach((x) =>
@@ -38,7 +39,7 @@ namespace HRB.CAT.Api.Controllers
             // send the response
             return new ProjectListResponse
             {
-                Projects = projects.ToList()
+                Projects = projects
             };
         }
     }

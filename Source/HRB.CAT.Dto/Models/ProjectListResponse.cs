@@ -6,6 +6,6 @@ namespace HRB.CAT.Dto.Models
 {
     public class ProjectListResponse
     {
-        public List<ProjectRoleDetails> Projects { get; set; }
+        public List<ProjectResponseDetails> Projects { get; set; }
     }
 }
