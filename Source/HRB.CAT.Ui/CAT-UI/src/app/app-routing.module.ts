@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/dashboard/:gua' },
+  // { path: '', pathMatch: 'full', redirectTo: '/dashboard/:gua' },
   { path: 'dashboard', loadChildren: '../app/cat-dashboard/cat-dashboard.module#CatDashboardModule' },
   { path: 'dashboard/:gua', loadChildren: '../app/cat-dashboard/cat-dashboard.module#CatDashboardModule' },
   { path: 'dashboard/:id', loadChildren: '../app/cat-dashboard/cat-dashboard.module#CatDashboardModule' },
