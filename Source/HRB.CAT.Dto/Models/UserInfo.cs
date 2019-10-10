@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HRB.CAT.Dto.Models
 {
-    public class ProjectInfo
+    public class UserInfo
     {
         private Guid _id;
         public Guid Id
@@ -20,9 +20,7 @@ namespace HRB.CAT.Dto.Models
                 _id = value;
             }
         }
-
-        public string ProjectName { get; set; }
-        public string ProjectCode { get; set; }
-        public int ProjectId { get; set; }
+        public string Email { get; set; }
+        public string Name { get; set; }
     }
 }

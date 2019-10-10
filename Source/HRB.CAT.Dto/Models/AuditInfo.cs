@@ -6,6 +6,7 @@ namespace HRB.CAT.Dto.Models
 {
     public class AuditInfo
     {
+        public Guid Id { get; set; }
         public int AuditId { get; set; }
         public int ProjectId { get; set; }
         public string AuditName { get; set; }

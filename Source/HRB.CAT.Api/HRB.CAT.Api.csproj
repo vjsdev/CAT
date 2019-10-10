@@ -17,7 +17,18 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HRB.CAT.Common.Utilities\HRB.CAT.Common.Utilities.csproj" />
+    <ProjectReference Include="..\HRB.CAT.Core\HRB.CAT.Core.csproj" />
+    <ProjectReference Include="..\HRB.CAT.Data\HRB.CAT.Data.csproj" />
     <ProjectReference Include="..\HRB.CAT.Dto\HRB.CAT.Dto.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="DataCache\Projects.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DataCache\Users.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
