@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HRB.CAT.Core.Contracts;
+using HRB.CAT.Data;
+using HRB.CAT.Dto.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -46,8 +49,11 @@ namespace HRB.CAT.Api
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CAT API", Version = "v1" });
             });
+            var dataManager = new DataManager();
+            DataInitializer.Start(dataManager);
+            services.AddSingleton<IDataStore>(dataManager);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

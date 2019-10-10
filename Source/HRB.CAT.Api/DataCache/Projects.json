@@ -1,0 +1,19 @@
+{
+  "Projects": [
+    {
+      "ProjectId": 101,
+      "ProjectCode": "P101",
+      "ProjectName": "GUA"
+    },
+    {
+      "ProjectId": 102,
+      "ProjectCode": "P102",
+      "ProjectName": "My Block"
+    },
+    {
+      "ProjectId": 103,
+      "ProjectCode": "P103",
+      "ProjectName": "Financial Services"
+    }
+  ]
+}
