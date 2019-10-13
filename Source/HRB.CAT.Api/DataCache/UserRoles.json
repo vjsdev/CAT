@@ -1,0 +1,24 @@
+{
+  "UserRoles": [
+    {
+      "ProjectId": null,
+      "RoleTypeMeta": 3,
+      "UserEmail": "vipin.john@hrblock.com"
+    },
+    {
+      "ProjectId": null,
+      "RoleTypeMeta": 2,
+      "UserEmail": "vipin.john@hrblock.com"
+    },
+    {
+      "ProjectId": 101,
+      "RoleTypeMeta": 0,
+      "UserEmail": "vipin.john@hrblock.com"
+    },
+    {
+      "ProjectId": 101,
+      "RoleTypeMeta": 1,
+      "UserEmail": "archana.chandran@hrblock.com"
+    }
+  ]
+}

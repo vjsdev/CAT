@@ -8,6 +8,7 @@ namespace HRB.CAT.Core.Configuration
     {
         public const string UserCollection = "Users";
         public const string ProjectCollection = "Projects";
+        public const string ProjectUserCollection = "ProjectUsers";
         public const string AuditCollection = "Audits";
     }
 }
