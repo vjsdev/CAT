@@ -63,5 +63,11 @@ namespace HRB.CAT.Api.Controllers
                 }
             };
         }
+
+        [HttpPut]
+        public ActionResult<AuditInfo> Update([FromBody]AuditUpdateRequest auditUpdateRequest) {
+
+            return auditUpdateRequest.Audit;
+        }
     }
 }

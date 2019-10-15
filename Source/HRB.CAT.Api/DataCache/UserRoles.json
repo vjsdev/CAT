@@ -1,12 +1,12 @@
 {
   "UserRoles": [
     {
-      "ProjectId": null,
+      "ProjectId": 0,
       "RoleTypeMeta": 3,
       "UserEmail": "vipin.john@hrblock.com"
     },
     {
-      "ProjectId": null,
+      "ProjectId": 0,
       "RoleTypeMeta": 2,
       "UserEmail": "vipin.john@hrblock.com"
     },
@@ -19,6 +19,27 @@
       "ProjectId": 101,
       "RoleTypeMeta": 1,
       "UserEmail": "archana.chandran@hrblock.com"
+    },
+    {
+      "ProjectId": 101,
+      "RoleTypeMeta": 1,
+      "UserEmail": "cat.requestor@hrblock.com"
+    },
+    {
+      "ProjectId": 101,
+      "RoleTypeMeta": 0,
+      "UserEmail": "cat.auditor@hrblock.com"
+    },
+    {
+      "ProjectId": 0,
+      "RoleTypeMeta": 3,
+      "UserEmail": "cat.admin@hrblock.com"
+    },
+    {
+      "ProjectId": 0,
+      "RoleTypeMeta": 2,
+      "UserEmail": "cat.manager@hrblock.com"
     }
   ]
 }
+ 

@@ -7,6 +7,22 @@
     {
       "Email": "archana.chandran@hrblock.com",
       "Name": "Archana Chandran"
+    },
+    {
+      "Email": "cat.requestor@hrblock.com",
+      "Name": "CAT Requestor"
+    },
+    {
+      "Email": "cat.auditor@hrblock.com",
+      "Name": "CAT Auditor"
+    },
+    {
+      "Email": "cat.admin@hrblock.com",
+      "Name": "CAT Admin"
+    },
+    {
+      "Email": "cat.manager@hrblock.com",
+      "Name": "CAT Manager"
     }
   ]
 }

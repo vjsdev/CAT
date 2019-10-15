@@ -33,10 +33,7 @@ namespace HRB.CAT.Api.Controllers
                 var hash = Hashing.ComputeSha256Hash(otp.ToString());
                 //var tempOTPPath = System.IO.Path.GetTempPath() + "\\OTP.txt";
                 //System.IO.File.AppendAllText(tempOTPPath, Environment.NewLine + DateTime.Now.ToString() + "\t" + otp + "\t" + hash + "\t" + loginRequest.Username);
-                Task.Run(() => {
-                    ///TODO: Use a better email template
-                    EmailHelper.SendEmail("C.A.T OTP", "Your OTP: " + otp.ToString(), loginRequest.Username);
-                });
+                EmailHelper.SendEmail("C.A.T OTP", "Your OTP: " + otp.ToString(), loginRequest.Username);
                 var result = new LoginResponse
                 {
                     Otp = hash,

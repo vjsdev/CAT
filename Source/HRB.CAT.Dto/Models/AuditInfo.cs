@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HRB.CAT.Dto.Types;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -19,5 +20,7 @@ namespace HRB.CAT.Dto.Models
         public List<RatingInfo> GeneralRatings { get; set; }
         public List<RatingInfo> Observations { get; set; }
         public List<AuditHistoryInfo> History { get; set; }
+        public string AuditState { get { return AuditStageMeta.GetDescription(); } }
+        public WorkflowStage AuditStageMeta { get; set; }
     }
 }
