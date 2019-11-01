@@ -1,0 +1,290 @@
+<div>
+	<div class="container-fluid">
+		<div class="row">
+			<app-cat-projectlist></app-cat-projectlist>
+			<main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+					<h1 class="h2">Dashboard</h1>
+					<select id="monthlyReport" class="form-control-sm">
+						<option>April 2019</option>
+						<option>March 2019</option>
+						<option>February 2019</option>
+						<option>January 2019</option>
+						<option>December 2018</option>
+					</select>
+				</div>
+				<div class="row">
+					<div class="col col-lg-12">
+						<div class="content">
+							<div class="row">
+								<div class="col col-lg-2">
+									<div class="card">
+										<div class="card-body">
+											<h6 class="card-title">Top Charts</h6>
+											<div class="card-text">
+												<ul class="toprating">
+													<li>
+														<i class="fas fa-medal"></i> GUA
+													</li>
+													<li>
+														<i class="fas fa-medal"></i> My Block
+													</li>
+													<li>
+														<i class="fas fa-medal"></i> Connect
+													</li>
+													<li>
+														<i class="fas fa-medal"></i> Salesforce
+													</li>
+													<li>
+														<i class="fas fa-medal"></i> HRBO
+													</li>
+													<li>
+														<i class="fas fa-medal"></i> Salesforce
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col col-lg-2">
+									<div class="card">
+										<div class="card-body">
+											<h6 class="card-title">Bottom 7</h6>
+											<div class="card-text">
+												<ul class="bottomrating">
+													<li>
+														<i class="fas fa-heart-broken"></i> GUA
+													</li>
+													<li>
+														<i class="fas fa-heart-broken"></i> My Block
+													</li>
+													<li>
+														<i class="fas fa-heart-broken"></i> Connect
+													</li>
+													<li>
+														<i class="fas fa-heart-broken"></i> HRBO
+													</li>
+													<li>
+														<i class="fas fa-heart-broken"></i> Architect
+													</li>
+													<li>
+														<i class="fas fa-heart-broken"></i> HRBO
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card">
+										<div class="card-body">
+											<h5 class="card-title"></h5>
+											<div class="card-text">
+												<div class="row">
+													<div class="col col-lg-6 col-md-6">
+                            <app-cat-doughnut-chart></app-cat-doughnut-chart>
+														<!-- <canvas id="statusDistributionChart"></canvas> -->
+													</div>
+													<div class="col col-lg-6 col-md-6">
+                            <app-cat-bar-chart></app-cat-bar-chart>
+														<!-- <canvas id="ratingDistributionChart"></canvas> -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">&nbsp;</div>
+				</div>
+				<div class="">
+					<div class="row">
+						<div class="col col-lg-6 col-md-12">
+							<div class="tableCover">
+								<h6>
+									<label for="monthlyReport">Report for </label>
+									<a href="#" class="btn btn-sm btn-outline-primary float-right">Export Report</a>
+								</h6>
+								<table class="table table-sm">
+									<tbody>
+										<tr>
+											<th scope="col" width="40%">Project</th>
+											<th scope="col" width="50%">Status</th>
+											<th scope="col" width="10%">Rating</th>
+										</tr>
+										<tr>
+											<td>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="customCheck1">
+														<label class="custom-control-label" for="customCheck1">
+															<a href="#">GUA</a>
+														</label>
+													</div>
+												</td>
+												<td>Waiting for auditor approval</td>
+												<td>
+													<div class="managerrating amber">37</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="customCheck2">
+															<label class="custom-control-label" for="customCheck2">
+																<a href="#">Connect</a>
+															</label>
+														</div>
+													</td>
+													<td>Waiting for auditor approval</td>
+													<td>
+														<div class="managerrating">67</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck3">
+																<label class="custom-control-label" for="customCheck3">
+																	<a href="#">HRBO</a>
+																</label>
+															</div>
+														</td>
+														<td>Audit preparation in progress</td>
+														<td>
+															<div class="managerrating green">88</div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="customCheck4">
+																	<label class="custom-control-label" for="customCheck4">
+																		<a href="#">Financial
+                              Services</a>
+																	</label>
+																</div>
+															</td>
+															<td>Locked out</td>
+															<td>
+																<div class="managerrating red">11</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="col col-lg-6 col-md-12">
+											<div class="tableCover">
+												<h6>
+                  Approve/Reject
+                </h6>
+												<table class="table table-sm">
+													<tbody>
+														<tr>
+															<th scope="col" width="30%">Project</th>
+															<th scope="col" width="50%">Request</th>
+															<th scope="col" width="20%"></th>
+														</tr>
+														<tr>
+															<td>
+                                                GUA
+                                            </td>
+															<td>
+                                                Requesting auditor access
+
+																<br />
+																<small>
+																	<i class="fas fa-user"></i> Vishnu Potti&nbsp;
+
+																	<i class="far fa-clock"></i> 18 June 2019 02:00 PM
+
+																</small>
+															</td>
+															<td>
+																<div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+																	<button type="button" class="btn btn-success">Accept</button>
+																	<button type="button" class="btn btn-danger">Reject</button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+                                                Connect
+
+                                            </td>
+															<td>
+                                                Requesting project access
+
+																<br />
+																<small>
+																	<i class="fas fa-user"></i> Vishnu Potti&nbsp;
+
+																	<i class="far fa-clock"></i> 18 June 2019 02:00 PM
+
+																</small>
+															</td>
+															<td>
+																<div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+																	<button type="button" class="btn btn-success">Accept</button>
+																	<button type="button" class="btn btn-danger">Reject</button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+                                                HRBO
+                                            </td>
+															<td>
+                                                Unlock request
+
+																<br />
+																<small>
+																	<i class="fas fa-user"></i> Vishnu Potti&nbsp;
+
+																	<i class="far fa-clock"></i> 18 June 2019 02:00 PM
+
+																</small>
+															</td>
+															<td>
+																<div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+																	<button type="button" class="btn btn-success">Accept</button>
+																	<button type="button" class="btn btn-danger">Reject</button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+                                                Financial Services
+                                            </td>
+															<td>
+                                                Unlock request
+
+																<br />
+																<small>
+																	<i class="fas fa-user"></i> Vishnu Potti&nbsp;
+
+																	<i class="far fa-clock"></i> 18 June 2019 02:00 PM
+
+																</small>
+															</td>
+															<td>
+																<div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+																	<button type="button" class="btn btn-success">Accept</button>
+																	<button type="button" class="btn btn-danger">Reject</button>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</main>
+						</div>
+					</div>
+				</div>

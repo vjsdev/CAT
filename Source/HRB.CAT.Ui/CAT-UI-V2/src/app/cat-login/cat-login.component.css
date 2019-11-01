@@ -1,0 +1,77 @@
+.container {
+  position: relative;
+  text-align: center;
+  font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+.c-image {
+  opacity: 0.2;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.c-wrapper {
+  position: absolute;
+  padding: 10px;
+  box-shadow: 0 0 3px #888888;
+}
+.c-info {
+  color: #616060;
+  background-color: #b8e99499;
+  border-color: #b8e99499 ;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.c-body {
+  font-size: 14px;
+}
+.c-btn-login {
+  color: #fff;
+  background-color: #82ccdd;
+  border-color: #82ccdd;
+}
+label {
+  margin-left: 0.5rem;
+}
+
+
+/* Form Container */
+body {
+  background-color: #FAFAFA;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.formContainer {
+  background-color: #fff;
+  margin-bottom: 2%;
+  padding: 3rem;
+  max-width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 40px 40px 10px 40px;
+  border-radius: 6px;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+
+}
+
+.logoImg {
+  height: 84px;
+  width: 84px;
+  margin: 37px 0;
+}
+.btnMain {
+  background-color: #6bdbd8; /* #caf171;*/
+  color: #202020;
+  font-weight: 500;
+}
+/* @media (min-width: 1440px)
+.logoImg {
+    margin: 07px 0 25px 0;
+    height: 120px;
+    width: 120px;
+} */
