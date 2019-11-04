@@ -1,0 +1,98 @@
+<!-- <div class="container">
+  <img class="float-right w-100 c-image"
+    src="https://www.mostsensational.com/wp-content/uploads/2017/09/startups1.jpg">
+  <div class="col-md-6 offset-md-3 mt-5 d-flex c-wrapper">
+    <div class="alert alert-info c-info">
+      <h4>C.A.T</h4>
+      <p>AUDIT TOOL</p>
+    </div>
+    <div class="card w-100">
+      <strong class="card-header">Sign In</strong>
+      <div class="card-body c-body">
+        <form *ngIf="!otp" [formGroup]="loginForm1" (ngSubmit)="onSubmit1()">
+          <div class="form-group">
+              <i class="fa fa-user"></i>
+            <label for="username">Enter your username or email id.</label>
+            <input type="text" formControlName="username" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted1 && f1.username.errors }" />
+            <div *ngIf="submitted1 && f1['username'].errors" class="invalid-feedback">
+              <div *ngIf="f1['username'].errors.required">Username is required.</div>
+              <div *ngIf="f1['username'].errors.pattern">Please provide a valid username.</div>
+            </div>
+          </div>
+          <button [disabled]="loading1" class="btn btn-primary c-btn-login">
+            <span *ngIf="loading1" class="spinner-border spinner-border-sm mr-1"></span>
+            Continue
+          </button>
+          <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+        </form>
+
+        <form *ngIf="otp" [formGroup]="loginForm2" (ngSubmit)="onSubmit2()">
+          <div class="form-group">
+            <i class="fa fa-key"></i>
+            <label for="password">Enter OTP</label>
+            <input type="password" formControlName="otp" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted2 && f2.otp.errors }" minlength=4 />
+            <div *ngIf="submitted2 && f2['otp'].errors" class="invalid-feedback">
+              <div *ngIf="f2['otp'].errors.required">OTP is required</div>
+              <div *ngIf="f2['otp'].errors.minlength">Please provide a valid OTP</div>
+            </div>
+          </div>
+          <button [disabled]="loading2" class="btn btn-primary c-btn-login">
+            <span *ngIf="loading2" class="spinner-border spinner-border-sm mr-1"></span>
+            Login
+          </button>
+          <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div> -->
+<div class="col-sm-8 col-md-6 offset-sm-2 offset-md-3 text-center">
+    <div>
+        <img class="logoImg" alt="H&amp;R Block" src="../../assets/img/hrb_logo.svg">
+    </div>
+    <div class="formContainer">
+        <h4>C.A.T</h4>
+        <p>AUDIT TOOL</p>
+      <form *ngIf="!otp" [formGroup]="loginForm1" (ngSubmit)="onSubmit1()">
+        <div class="form-group">
+            <i class="fa fa-user"></i>
+          <label for="username">Enter your username or email id.</label>
+          <input type="text" formControlName="username" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted1 && f1.username.errors }" />
+          <div *ngIf="submitted1 && f1['username'].errors" class="invalid-feedback">
+            <div *ngIf="f1['username'].errors.required">Username is required.</div>
+            <div *ngIf="f1['username'].errors.pattern">Please provide a valid username.</div>
+          </div>
+        </div>
+        <button [disabled]="loading1" class="btn btnMain">
+          <span *ngIf="loading1" class="spinner-border spinner-border-sm mr-1"></span>
+          Continue
+        </button>
+        <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+      </form>
+
+      <form *ngIf="otp" [formGroup]="loginForm2" (ngSubmit)="onSubmit2()">
+        <div class="form-group">
+          <i class="fa fa-key"></i>
+          <label for="password">Enter OTP</label>
+          <input type="password" formControlName="otp" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted2 && f2.otp.errors }" minlength=4 />
+          <div *ngIf="submitted2 && f2['otp'].errors" class="invalid-feedback">
+            <div *ngIf="f2['otp'].errors.required">OTP is required</div>
+            <div *ngIf="f2['otp'].errors.minlength">Please provide a valid OTP</div>
+          </div>
+        </div>
+        <button [disabled]="loading2" class="btn btnMain">
+          <span *ngIf="loading2" class="spinner-border spinner-border-sm mr-1"></span>
+          Login
+        </button>
+        <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+      </form>
+
+    </div>
+</div>
+
+

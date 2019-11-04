@@ -1,0 +1,13 @@
+.c-sidebar {
+  background-color: #1d1d1d;
+}
+li.active > a {
+  background-color: rgba(84, 84, 84, 0.91) !important;
+  box-shadow: none;
+}
+.nav li.active > a, .nav li.active > a i {
+  color: #7cc242 !important;
+}
+.nav-item {
+  color: white !important;
+}

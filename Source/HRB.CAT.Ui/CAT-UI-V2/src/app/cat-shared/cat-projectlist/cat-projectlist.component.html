@@ -1,0 +1,40 @@
+<nav class="col-md-2 d-none d-md-block c-sidebar sidebar">
+  <div class="sidebar-sticky">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <span class="nav-link">PROJECTS</span>
+      </li>
+      <li class="nav-item" *ngFor="let project of projectList">
+        <a class="nav-link" (click)="showAudit(project)">
+          <i class="fab fa-connectdevelop"></i>
+          {{project.projectName}}
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <ul class="nav flex-column mb-2">
+      <li class="nav-item">
+        <span class="nav-link">MANAGE</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fab fa-pushed"></i>
+          My Activities
+        </a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link">
+          <i class="fab fa-pushed"></i>
+          Account Settings
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fab fa-pushed"></i>
+          Contact C.A.T Admin
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

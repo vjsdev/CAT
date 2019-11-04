@@ -9,7 +9,8 @@ namespace HRB.CAT.Dto.Types
 {
     public enum WorkflowStage
     {
-        
+        [Description("NONE")]
+        NONE
     }
 
     public static partial class Extensions {
