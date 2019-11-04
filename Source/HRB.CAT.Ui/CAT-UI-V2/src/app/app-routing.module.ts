@@ -6,7 +6,6 @@ import { CatAdminComponent } from './cat-admin/cat-admin.component';
 import { CatLoginComponent } from './cat-login/cat-login.component';
 import { Role } from './cat-shared/cat-constants/cat-constant';
 
-
 const routes: Routes = [
   {
       path: '',
