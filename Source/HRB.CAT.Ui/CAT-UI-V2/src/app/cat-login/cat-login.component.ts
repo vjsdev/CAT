@@ -13,6 +13,7 @@ import { MsAdalAngular6Service } from 'microsoft-adal-angular6';
 })
 export class CatLoginComponent implements OnInit, OnDestroy {
   userName: string;
+  email: string;
   otp: string;
   returnUrl: string;
   loginForm1: FormGroup;
@@ -31,7 +32,7 @@ export class CatLoginComponent implements OnInit, OnDestroy {
     private router: Router,
     private formBuilder: FormBuilder,
     private adal: MsAdalAngular6Service) {
-      this.userName=this.adal.LoggedInUserName;
+      this.userName=this.adal.LoggedInUserEmail;
    
 
   }
